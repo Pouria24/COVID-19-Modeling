@@ -1,42 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ### <p style="text-align: right;"> &#9989; Pouria Khoushehchin</p>
-
-# ____
-# # Day 21 In-class Assignment: COVID-19 Modeling and Project Review
-# ____
-# <img src="https://www.cdc.gov/coronavirus/2019-ncov/images/social/covid-19-summary.png" width=300px>
-# 
-# ### Goals for today's in-class assignment:
-# * Revisit power of compartmental models!
 # * Use Monte Carlo methods to aid in modeling of COVID-19 spread.
-# * Combine tools for regression with output from compartmental models.
 # 
-# ### Final Project Review
-# * When an instructor joins your group, share your draft project notebook with your group
-# * ALSO, if you have any questions about your final project, ask instructors today!!
-
 # ---
 # With the global pandemic, there are a multitude of research efforts to model the impact and spread of the COVID-19 disease.  Some of this work has been published in papers using compartmental models including:
 # 
-# * Chen, Yuxuan. “A Novel SEIR Model Based on the Data of Quarantined, Suspected, Hospitalized, Identified and Recovered Cases to Forecast the Trend of 2019-nCov Epidemics After February 12, 2020,” March 12, 2020, 1–26.
-# * He, S, S Tang, and L Rong. “A Discrete Stochastic Model of the COVID-19 Outbreak: Forecast and Control.” Aimspress.com, n.d. http://doi.org/10.3934/mbe.2020153.
-# * Wu, Joseph T, Kathy Leung, and Gabriel M Leung. “Nowcasting and Forecasting the Potential Domestic and International Spread of the 2019-nCoV Outbreak Originating in Wuhan, China: a Modelling Study..” Lancet (London, England) 395, no. 10225 (February 29, 2020): 689–97. http://doi.org/10.1016/S0140-6736(20)30260-9.
-# * Zhang, Yuan, Chong You, Zhenghao Cai, Jiarui Sun, Wenjie Hu, and Xiao-Hua Zhou. “Prediction of the COVID-19 Outbreak Based on a Realistic Stochastic Model,” March 10, 2020, 1–38. http://doi.org/10.1101/2020.03.10.20033803.
-# 
-# These models include graphical presentations of the approach like the following:
-# ![cModel_large.png](attachment:cModel_large.png)
-# 
-# You have all the tools from CMSE 201 to implement these models, but they would take a while to code. For the purposes of this assignment, we will adopt a straigtforward SIR model for spread of disease using an approach presented by Prof Murillo (CMSE 201-005 Instructor, https://murillogroupmsu.com/computational-modeling-of-coronavirus/)
-# 
-# The SIR [**compartmental model**](https://en.wikipedia.org/wiki/Multi-compartment_model)  uses three compartments **S**, **I**, and **R**.  If interested, you can watch descriptions of this specifically for COVID-19 at:
-# https://www.youtube.com/watch?v=Qrp40ck3WpI
-# and in more detail at
-# https://www.youtube.com/watch?v=NKMHhm2Zbkw.
-# 
-# 
-# As discussed in class before, the compartments represent three groups:
+# The compartments represent three groups:
 # - Susceptible (S)
 # - Infected (I)
 # - Recovered (R)
@@ -53,7 +20,6 @@
 # 
 # We are going to apply this model to the spread of infection in the state of Michigan to help us answer questions about COVID-19.
 # 
-# **Run the code below to make sure it works and produces a plot. Review the code and make sure you understand how it works.**
 
 # In[1]:
 
@@ -391,16 +357,3 @@ print('For every 1% increase in the number of people susceptible to COVID-19, ')
 print('   the time till peak infection will go down by','YYYY',' days.')
 
 
-# **What do you conclude?** Based on your results, what is your recommendation to your friends and family about COVID-19? What aspects of the model do you feel need to be refined?
-
-# <font size="+3">&#9998;</font>Stay home and keep social distancing
-
-# ----
-# #### When you finish this assignment, work on your project notebook.  Ask questions of your classmates and instructors to make sure you are on the right track for your project.  Projects will be presented in 2 weeks (starting April 13th!).
-
-# ### Congratulations, we're done!
-# 
-# Now, you just need to submit this assignment by uploading it to the course <a href="https://d2l.msu.edu/">Desire2Learn</a> web page for today's submission folder (Don't forget to add your names in the first cell).
-# 
-
-# &#169; Copyright 2020,  Michigan State University Board of Trustees
